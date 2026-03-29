@@ -1,0 +1,442 @@
+export const destinos = [
+  {
+    id: '1',
+    slug: 'menorca-espana',
+    name: 'Menorca',
+    country: 'España',
+    region: 'Islas Baleares',
+    tagline: 'La isla virgen del Mediterráneo',
+    description: 'Menorca es la joya más tranquila de las Baleares. Con más playas vírgenes que Mallorca e Ibiza juntas, esta Reserva de la Biosfera de la UNESCO te encantará con sus calas de agua cristalina, paisajes verdes y pueblos encantadores.',
+    heroImage: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1280&h=720&fit=crop&q=60&auto=format',
+    gallery: [
+      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=450&fit=crop&q=60&auto=format',
+      'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=600&h=450&fit=crop&q=60&auto=format',
+      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=450&fit=crop&q=60&auto=format',
+      'https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=600&h=450&fit=crop&q=60&auto=format',
+    ],
+    rating: 4.9,
+    activitiesCount: 24,
+    quickFacts: {
+      bestTime: 'Mayo - Septiembre',
+      currency: 'Euro (€)',
+      language: 'Español/Catalán',
+      timezone: 'GMT+1',
+    },
+    howToGet: {
+      byPlane: 'El aeropuerto de Menorca (MAH) recibe vuelos desde las principales ciudades españolas. Desde Madrid 1h 15min.',
+      byBoat: 'Ferry desde Barcelona (4h) o Valencia (5h) con Balearia.',
+      byCar: 'Alquila coche en el aeropuerto. La isla es pequeña: solo 50km de extremo a extremo.',
+    },
+    whereToSleep: {
+      intro: 'Menorca ofrece desde hoteles boutique hasta resorts familiares.',
+      areas: [
+        {
+          name: 'Ciutadella',
+          description: 'La antigua capital con encanto histórico.',
+          bestFor: 'Parejas, cultura',
+          alojamientos: [
+            { nombre: 'Hotel Boutique Can Alberti', tipo: 'Hotel boutique', precio: 120, rating: 4.8, bookingUrl: 'https://www.booking.com/hotel/es/can-alberti-ciutadella.html', imagen: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Hotel con encanto en pleno centro histórico de Ciutadella.' },
+            { nombre: 'Hostal Sa Reta', tipo: 'Hostal', precio: 65, rating: 4.5, bookingUrl: 'https://www.booking.com/hotel/es/hostal-sa-reta-ciutadella.html', imagen: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Pequeño hostal con terraza y vistas a la catedral.' },
+          ],
+        },
+        {
+          name: 'Maó',
+          description: 'La capital con el puerto natural más grande.',
+          bestFor: 'Familias',
+          alojamientos: [
+            { nombre: 'Hotel Artiem Capri', tipo: 'Hotel', precio: 110, rating: 4.6, bookingUrl: 'https://www.booking.com/hotel/es/artiem-capri-mao.html', imagen: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Vistas al puerto de Maó con piscina infinity.' },
+            { nombre: 'Hotel Rural Sant Antoni', tipo: 'Agroturismo', precio: 95, rating: 4.9, bookingUrl: 'https://www.booking.com/hotel/es/rural-sant-antoni-menorca.html', imagen: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Finca menorquina con encanto y productos locales.' },
+          ],
+        },
+        {
+          name: 'Fornells',
+          description: 'Pueblo de pescadores famoso por su langosta.',
+          bestFor: 'Gastronomía',
+          alojamientos: [
+            { nombre: 'Hotel Carema Club', tipo: 'Hotel', precio: 85, rating: 4.4, bookingUrl: 'https://www.booking.com/hotel/es/carema-club-fornells.html', imagen: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Frente al mar con acceso directo a la bahía.' },
+            { nombre: 'Vila Gale Menorca', tipo: 'Resort', precio: 140, rating: 4.7, bookingUrl: 'https://www.booking.com/hotel/es/vila-gale-menorca.html', imagen: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Resort todo incluido ideal para familias.' },
+          ],
+        },
+      ],
+    },
+    whatToDo: {
+      intro: 'Más de 70 playas y calas vírgenes te esperan.',
+      activities: [
+        { name: 'Calas del Sur', description: 'Macarella, Macarelleta, Turqueta...', tip: 'Llega antes de las 10am' },
+        { name: 'Binibeca Vell', description: 'Pueblo de casas blancas laberínticas.', tip: 'Ve al atardecer' },
+        { name: 'Faro de Cavalleria', description: 'Acantilados de 90m con vistas salvajes.', tip: 'Atardecer épico' },
+      ],
+    },
+    excursions: [
+      {
+        id: 'menorca-boat',
+        title: 'Excursión en Barco Costa Norte',
+        description: 'Calas inaccesibles por tierra en catamarán.',
+        image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=450&fit=crop&q=60&auto=format',
+        price: 59,
+        currency: '€',
+        rating: 4.8,
+        reviews: 2341,
+        duration: '5 horas',
+        groupSize: 'Máx. 20',
+        affiliateUrl: 'https://www.civitatis.com/es/menorca/excursion-barco-norte/',
+        provider: 'civitatis',
+        highlights: ['Comida incluida', 'Snorkel', 'Calas vírgenes'],
+      },
+      {
+        id: 'menorca-kayak',
+        title: 'Kayak + Snorkel en Cuevas',
+        description: 'Cuevas secretas en la costa salvaje.',
+        image: 'https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=600&h=450&fit=crop&q=60&auto=format',
+        price: 45,
+        currency: '€',
+        rating: 4.9,
+        reviews: 876,
+        duration: '3 horas',
+        groupSize: 'Máx. 12',
+        affiliateUrl: 'https://www.getyourguide.com/menorca-l1932/kayak-snorkel-cave-tc125/',
+        provider: 'getyourguide',
+        highlights: ['Guía experto', 'Equipo incluido'],
+      },
+    ],
+    affiliateLinks: {
+      skyscanner: 'https://www.skyscanner.net/transport/flights/mad/mah/',
+      booking: 'https://www.booking.com/region/es/menorca.html',
+    },
+  },
+
+  {
+    id: '2',
+    slug: 'mallorca-espana',
+    name: 'Mallorca',
+    country: 'España',
+    region: 'Islas Baleares',
+    tagline: 'La isla de las mil caras',
+    description: 'Mallorca es la reina de las Baleares. Sierra de Tramuntana (UNESCO), calas caribeñas, Palma y su catedral gótica, pueblos con encanto y gastronomía sorprendente.',
+    heroImage: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1280&h=720&fit=crop&q=60&auto=format',
+    gallery: [
+      'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600&h=450&fit=crop&q=60&auto=format',
+      'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=600&h=450&fit=crop&q=60&auto=format',
+    ],
+    rating: 4.8,
+    activitiesCount: 42,
+    quickFacts: {
+      bestTime: 'Mayo - Octubre',
+      currency: 'Euro (€)',
+      language: 'Español/Catalán',
+      timezone: 'GMT+1',
+    },
+    howToGet: {
+      byPlane: 'Aeropuerto de Palma (PMI), uno de los más conectados.',
+      byBoat: 'Ferry desde Barcelona (4h) o Valencia (4h 30min).',
+      byCar: 'Imprescindible para explorar la Sierra de Tramuntana.',
+    },
+    whereToSleep: {
+      intro: 'Desde hoteles boutique hasta resorts de lujo.',
+      areas: [
+        {
+          name: 'Palma',
+          description: 'La capital con cultura y nightlife.',
+          bestFor: 'Ciudad',
+          alojamientos: [
+            { nombre: 'Hotel Sant Jaume', tipo: 'Hotel boutique', precio: 160, rating: 4.9, bookingUrl: 'https://www.booking.com/hotel/es/hotel-sant-jaume.html', imagen: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Hotel gourmet en el casco antiguo de Palma con rooftop.' },
+            { nombre: 'Hotel Palacio de Aixo', tipo: 'Hotel histórico', precio: 130, rating: 4.7, bookingUrl: 'https://www.booking.com/hotel/es/hotel-palacio-de-aixo.html', imagen: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Palacio reformado con piscina y spa en pleno centro.' },
+          ],
+        },
+        {
+          name: 'Valldemossa',
+          description: 'Pueblo de montaña bohemio.',
+          bestFor: 'Romántico',
+          alojamientos: [
+            { nombre: 'Hotel Valldemossa', tipo: 'Hotel boutique', precio: 200, rating: 4.9, bookingUrl: 'https://www.booking.com/hotel/es/hotel-valldemossa.html', imagen: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Vistas a la sierra desde una finca del siglo XIX.' },
+            { nombre: 'Agroturismo Son Mir', tipo: 'Agroturismo', precio: 95, rating: 4.6, bookingUrl: 'https://www.booking.com/hotel/es/agroturismo-son-mir.html', imagen: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Casa de piedra rodeada de olivos y limoneros.' },
+          ],
+        },
+      ],
+    },
+    whatToDo: {
+      intro: 'Playas, montañas, pueblos y cultura.',
+      activities: [
+        { name: 'Sierra de Tramuntana', description: 'Patrimonio UNESCO.', tip: 'Tren a Sóller' },
+        { name: 'Caló des Moro', description: 'La playa más fotografiada.', tip: 'Llega a las 8am' },
+      ],
+    },
+    excursions: [
+      {
+        id: 'mallorca-boat',
+        title: 'Barco Costa Tramuntana',
+        description: 'Navega hasta Puerto de Sóller.',
+        image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=450&fit=crop&q=60&auto=format',
+        price: 75,
+        currency: '€',
+        rating: 4.7,
+        reviews: 2134,
+        duration: '6 horas',
+        groupSize: 'Máx. 25',
+        affiliateUrl: 'https://www.civitatis.com/es/palma-mallorca/excursion-barco-soller/',
+        provider: 'civitatis',
+        highlights: ['Comida', 'Snorkel'],
+      },
+    ],
+    affiliateLinks: {
+      skyscanner: 'https://www.skyscanner.net/transport/flights/mad/pmi/',
+      booking: 'https://www.booking.com/region/es/mallorca.html',
+    },
+  },
+
+  {
+    id: '3',
+    slug: 'ibiza-espana',
+    name: 'Ibiza',
+    country: 'España',
+    region: 'Islas Baleares',
+    tagline: 'Mucho más que fiesta',
+    description: 'Ibiza esconde calas vírgenes, pueblos bohemios, mercados hippies y el mejor atardecer del Mediterráneo.',
+    heroImage: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1280&h=720&fit=crop&q=60&auto=format',
+    gallery: [
+      'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=450&fit=crop&q=60&auto=format',
+    ],
+    rating: 4.7,
+    activitiesCount: 35,
+    quickFacts: {
+      bestTime: 'Junio - Septiembre',
+      currency: 'Euro (€)',
+      language: 'Español/Catalán',
+      timezone: 'GMT+1',
+    },
+    howToGet: {
+      byPlane: 'Aeropuerto de Ibiza (IBZ) conectado con toda Europa.',
+      byBoat: 'Ferry desde Barcelona (4h) o Valencia (3h).',
+      byCar: 'Necesario para calas escondidas.',
+    },
+    whereToSleep: {
+      intro: 'Hoteles con DJ o casas rurales, hay para todos los gustos.',
+      areas: [
+        {
+          name: 'Ibiza Ciudad',
+          description: 'Dalt Vila y nightlife.',
+          bestFor: 'Fiesta',
+          alojamientos: [
+            { nombre: 'Hotel Montesol Experimental', tipo: 'Hotel boutique', precio: 180, rating: 4.8, bookingUrl: 'https://www.booking.com/hotel/es/hotel-montesol-experimental.html', imagen: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Hotel icónico frente al puerto con rooftop bar y DJ en vivo.' },
+            { nombre: 'Hostal La Torre', tipo: 'Hostal boutique', precio: 110, rating: 4.7, bookingUrl: 'https://www.booking.com/hotel/es/hostal-la-torre.html', imagen: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Atardeceres legendarios desde la piscina infinita.' },
+            { nombre: 'Hotel Pacha Ibiza', tipo: 'Hotel', precio: 220, rating: 4.5, bookingUrl: 'https://www.booking.com/hotel/es/hotel-pacha-ibiza.html', imagen: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Con acceso directo al club Pacha y spa exclusivo.' },
+          ],
+        },
+        {
+          name: 'Santa Eulalia',
+          description: 'Más tranquila y familiar.',
+          bestFor: 'Familias',
+          alojamientos: [
+            { nombre: 'Hotel ME Ibiza', tipo: 'Resort', precio: 250, rating: 4.9, bookingUrl: 'https://www.booking.com/hotel/es/hotel-me-ibiza.html', imagen: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Resort de lujo con SPA, kids club y playa privada.' },
+            { nombre: 'Aguas de Ibiza Grand Luxe', tipo: 'Hotel', precio: 190, rating: 4.8, bookingUrl: 'https://www.booking.com/hotel/es/aguas-de-ibiza-grand-luxe.html', imagen: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Diseño minimalista y gastronomía con estrella Michelin.' },
+          ],
+        },
+      ],
+    },
+    whatToDo: {
+      intro: 'Calas, atardeceres y pueblos bohemios.',
+      activities: [
+        { name: 'Cala Comte', description: 'Aguas turquesas cristalinas.', tip: 'Atardecer' },
+        { name: 'Es Vedrà', description: 'Peñón mágico de 400m.', tip: 'Desde Cala d\'Hort' },
+      ],
+    },
+    excursions: [
+      {
+        id: 'ibiza-formentera',
+        title: 'Excursión a Formentera',
+        description: 'La isla vecina con playas cristalinas.',
+        image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=450&fit=crop&q=60&auto=format',
+        price: 85,
+        currency: '€',
+        rating: 4.9,
+        reviews: 2876,
+        duration: '8 horas',
+        groupSize: 'Máx. 12',
+        affiliateUrl: 'https://www.civitatis.com/es/ibiza/excursion-formentera-velero/',
+        provider: 'civitatis',
+        highlights: ['Comida gourmet', 'Ses Illetes'],
+      },
+    ],
+    affiliateLinks: {
+      skyscanner: 'https://www.skyscanner.net/transport/flights/mad/ibz/',
+      booking: 'https://www.booking.com/region/es/ibiza.html',
+    },
+  },
+
+  {
+    id: '4',
+    slug: 'tenerife-espana',
+    name: 'Tenerife',
+    country: 'España',
+    region: 'Islas Canarias',
+    tagline: 'La isla de la eterna primavera',
+    description: 'Tenerife es un mundo en una isla: el Teide, playas volcánicas, bosques de laurisilva y el mejor clima del mundo.',
+    heroImage: 'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=1280&h=720&fit=crop&q=60&auto=format',
+    gallery: [
+      'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=600&h=450&fit=crop&q=60&auto=format',
+    ],
+    rating: 4.8,
+    activitiesCount: 38,
+    quickFacts: {
+      bestTime: 'Todo el año',
+      currency: 'Euro (€)',
+      language: 'Español',
+      timezone: 'GMT+0',
+    },
+    howToGet: {
+      byPlane: 'Aeropuertos TFS (Sur) y TFN (Norte).',
+      byBoat: 'Ferry desde Gran Canaria (1h 30min).',
+      byCar: 'Imprescindible para explorar.',
+    },
+    whereToSleep: {
+      intro: 'Sur cálido y turístico, norte verde y auténtico.',
+      areas: [
+        {
+          name: 'Costa Adeje',
+          description: 'Zona exclusiva y soleada.',
+          bestFor: 'Playas',
+          alojamientos: [
+            { nombre: 'Hotel Bahía del Duque', tipo: 'Resort', precio: 280, rating: 4.9, bookingUrl: 'https://www.booking.com/hotel/es/hotel-bahía-del-duque.html', imagen: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Resort de lujo con arquitectura canaria y 7 piscinas.' },
+            { nombre: 'GF Gran Costa Adeje', tipo: 'Hotel', precio: 150, rating: 4.6, bookingUrl: 'https://www.booking.com/hotel/es/gf-gran-costa-adeje.html', imagen: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Todo incluido frente a la playa de Fañabé.' },
+            { nombre: 'Hotel Suite Villa María', tipo: 'Villas', precio: 200, rating: 4.8, bookingUrl: 'https://www.booking.com/hotel/es/hotel-suite-villa-maría.html', imagen: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Villas privadas con piscina y vistas al Atlántico.' },
+          ],
+        },
+        {
+          name: 'Puerto de la Cruz',
+          description: 'Primer destino turístico.',
+          bestFor: 'Auténtico',
+          alojamientos: [
+            { nombre: 'Hotel Botánico', tipo: 'Hotel', precio: 170, rating: 4.8, bookingUrl: 'https://www.booking.com/hotel/es/hotel-botánico.html', imagen: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Oriental-style spa y jardines tropicales emblemáticos.' },
+            { nombre: 'Hotel Af Valle Orotava', tipo: 'Hotel boutique', precio: 90, rating: 4.5, bookingUrl: 'https://www.booking.com/hotel/es/hotel-af-valle-orotava.html', imagen: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Casa colonial canaria con encanto en el centro.' },
+          ],
+        },
+      ],
+    },
+    whatToDo: {
+      intro: 'Paisajes de otro planeta.',
+      activities: [
+        { name: 'Parque Nacional del Teide', description: 'Volcán más alto de España.', tip: 'Reserva permiso' },
+        { name: 'Masca', description: 'Pueblo perdido en las montañas.', tip: 'Ve temprano' },
+      ],
+    },
+    excursions: [
+      {
+        id: 'tenerife-teide',
+        title: 'Teide + Estrellas',
+        description: 'Volcán y observación astronómica.',
+        image: 'https://images.unsplash.com/photo-1507400492013-162706c8c05e?w=600&h=450&fit=crop&q=60&auto=format',
+        price: 75,
+        currency: '€',
+        rating: 4.9,
+        reviews: 3267,
+        duration: '8 horas',
+        groupSize: 'Grupos',
+        affiliateUrl: 'https://www.civitatis.com/es/tenerife/excursion-teide-estrellas/',
+        provider: 'civitatis',
+        highlights: ['Telescopio', 'Cena'],
+      },
+    ],
+    affiliateLinks: {
+      skyscanner: 'https://www.skyscanner.net/transport/flights/mad/tfs/',
+      booking: 'https://www.booking.com/region/es/tenerife.html',
+    },
+  },
+
+  {
+    id: '5',
+    slug: 'granada-espana',
+    name: 'Granada',
+    country: 'España',
+    region: 'Andalucía',
+    tagline: 'La joya mora de España',
+    description: 'Granada es magia: la Alhambra (UNESCO), el Albaicín, flamenco en cuevas, tapas gratis y Sierra Nevada.',
+    heroImage: 'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=1280&h=720&fit=crop&q=60&auto=format',
+    gallery: [
+      'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=600&h=450&fit=crop&q=60&auto=format',
+    ],
+    rating: 4.9,
+    activitiesCount: 28,
+    quickFacts: {
+      bestTime: 'Marzo - Mayo / Septiembre - Noviembre',
+      currency: 'Euro (€)',
+      language: 'Español',
+      timezone: 'GMT+1',
+    },
+    howToGet: {
+      byPlane: 'Aeropuerto Federico García Lorca (GRX).',
+      byBoat: 'Ciudad interior.',
+      byCar: 'Desde Madrid (4h) o Málaga (1h 30min).',
+    },
+    whereToSleep: {
+      intro: 'Alojamientos históricos con vistas a la Alhambra.',
+      areas: [
+        {
+          name: 'Albaicín',
+          description: 'Barrio morisco con miradores.',
+          bestFor: 'Vistas',
+          alojamientos: [
+            { nombre: 'Hotel América', tipo: 'Hotel boutique', precio: 140, rating: 4.8, bookingUrl: 'https://www.booking.com/hotel/es/hotel-américa.html', imagen: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Terraza con las mejores vistas a la Alhambra iluminada.' },
+            { nombre: 'Carmen de la Alcubilla', tipo: 'Casa histórica', precio: 110, rating: 4.7, bookingUrl: 'https://www.booking.com/hotel/es/carmen-de-la-alcubilla.html', imagen: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Carmen tradicional con jardín andalusí y fuentes.' },
+          ],
+        },
+        {
+          name: 'Centro',
+          description: 'Cerca de todo: tapas y compras.',
+          bestFor: 'Todo a mano',
+          alojamientos: [
+            { nombre: 'Hotel Room Mate Leo', tipo: 'Hotel', precio: 95, rating: 4.6, bookingUrl: 'https://www.booking.com/hotel/es/hotel-room-mate-leo.html', imagen: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Diseño moderno y rooftop con piscina en pleno centro.' },
+            { nombre: 'Hotel Palacio de los Navas', tipo: 'Hotel histórico', precio: 80, rating: 4.5, bookingUrl: 'https://www.booking.com/hotel/es/hotel-palacio-de-los-navas.html', imagen: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400&h=300&fit=crop&q=60&auto=format', descripcion: 'Palacio del siglo XVI reformado junto a la catedral.' },
+          ],
+        },
+      ],
+    },
+    whatToDo: {
+      intro: 'Historia a cada paso.',
+      activities: [
+        { name: 'La Alhambra', description: 'Monumento más visitado de España.', tip: 'Reserva 2-3 meses antes' },
+        { name: 'Ruta de Tapas', description: 'Tapas GRATIS con la bebida.', tip: 'Calle Navas' },
+      ],
+    },
+    excursions: [
+      {
+        id: 'granada-alhambra',
+        title: 'Visita Guiada Alhambra',
+        description: 'Sin colas, guía oficial.',
+        image: 'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=600&h=450&fit=crop&q=60&auto=format',
+        price: 49,
+        currency: '€',
+        rating: 4.9,
+        reviews: 4567,
+        duration: '3 horas',
+        groupSize: 'Máx. 30',
+        affiliateUrl: 'https://www.civitatis.com/es/granada/entradas-alhambra/',
+        provider: 'civitatis',
+        highlights: ['Sin colas', 'Guía oficial'],
+      },
+    ],
+    affiliateLinks: {
+      skyscanner: 'https://www.skyscanner.net/transport/flights/mad/grx/',
+      booking: 'https://www.booking.com/city/es/granada.html',
+    },
+  },
+]
+
+export function getEditedDestinos() {
+  if (typeof window === 'undefined') return destinos
+  try {
+    const stored = localStorage.getItem('iva-edits-destinos')
+    if (stored) {
+      const parsed = JSON.parse(stored)
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed
+    }
+  } catch {}
+  return destinos
+}
+
+export function getDestinationBySlug(slug) {
+  return getEditedDestinos().find(d => d.slug === slug)
+}
+
+export function getAllDestinationSlugs() {
+  return getEditedDestinos().map(d => d.slug)
+}

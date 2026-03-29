@@ -1,0 +1,5 @@
+export { default as Home } from './Home.svelte'
+export { default as Destinos } from './Destinos.svelte'
+export { default as DestinoDetalle } from './DestinoDetalle.svelte'
+export { default as AdminLogin } from './AdminLogin.svelte'
+export { default as AdminEdit } from './AdminEdit.svelte'
