@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-cream: #FAFAF9;
+  --color-sky-pastel: #7DD3FC;
+  --color-coral-soft: #FDA4AF;
+  --color-mint-soft: #86EFAC;
+  --color-lavender-soft: #C4B5FD;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-gray-800 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    letter-spacing: 0.01em;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md rounded-2xl border border-white/20 shadow-sm;
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300 hover:shadow-md hover:bg-white/80;
+  }
+
+  .btn-primary {
+    @apply bg-coral-soft text-white px-6 py-3 rounded-xl font-medium
+           transition-all duration-300 hover:bg-pink-400 hover:shadow-lg
+           active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply bg-sky-pastel text-white px-6 py-3 rounded-xl font-medium
+           transition-all duration-300 hover:bg-sky-400 hover:shadow-lg
+           active:scale-95;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 mb-8;
+  }
+}
+
+/* Parallax effect helper */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
