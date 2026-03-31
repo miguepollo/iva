@@ -120,7 +120,7 @@
 }
 
 img {
-  content-visibility: auto;
+  -webkit-user-drag: none;
 }
 
 @supports (content-visibility: auto) {

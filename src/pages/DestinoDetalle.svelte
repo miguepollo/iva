@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte'
+  import { onMount, tick, afterUpdate } from 'svelte'
   import { MapPin, Calendar, Globe, Clock, Plane, Ship, Car, Hotel, Star, ExternalLink, ArrowLeft } from 'lucide-svelte'
   import { ExcursionCard, QuickFacts, Tabs } from '../components/ui'
   import { AdminEditButton } from '../components/admin'
@@ -9,8 +9,15 @@
   export let slug = ''
 
   let scrollY = 0
+  let observer = null
 
   $: destination = getDestinationBySlug(slug)
+
+  function setupObserver() {
+    if (!observer) return
+    const sections = document.querySelectorAll('.section-reveal:not(.visible)')
+    sections.forEach(s => observer.observe(s))
+  }
 
   function navigate(path) {
     router.navigate(path)
@@ -204,13 +211,17 @@
     },
   ].filter(t => t.condition) : []
 
+  $: if (destination) {
+    tick().then(setupObserver)
+  }
+
   onMount(() => {
     function handleScroll() {
       scrollY = window.scrollY
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
 
-    const observer = new IntersectionObserver(
+    observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -221,12 +232,11 @@
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     )
 
-    const sections = document.querySelectorAll('.section-reveal')
-    sections.forEach(s => observer.observe(s))
+    tick().then(setupObserver)
 
     return () => {
       window.removeEventListener('scroll', handleScroll)
-      sections.forEach(s => observer.unobserve(s))
+      if (observer) observer.disconnect()
     }
   })
 </script>

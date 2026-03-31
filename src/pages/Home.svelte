@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte'
+  import { onMount, tick } from 'svelte'
   import { Plane, Palmtree, Compass, Star, ArrowRight, MapPin, Search, Sparkles, Heart, Globe, Users } from 'lucide-svelte'
   import { Button, DestinationCard } from '../components/ui'
   import { getEditedDestinos } from '../data/destinos.js'
@@ -29,7 +29,7 @@
     return url.replace(/w=1920/, 'w=600').replace(/h=1080/, 'h=400')
   }
 
-  onMount(() => {
+  onMount(async () => {
     destinos = getEditedDestinos()
 
     function handleScroll() {
@@ -48,6 +48,7 @@
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     )
 
+    await tick()
     sections = document.querySelectorAll('.section-reveal')
     sections.forEach(s => observer.observe(s))
 

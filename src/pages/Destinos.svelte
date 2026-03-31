@@ -1,5 +1,5 @@
 <script>
-  import { onMount } from 'svelte'
+  import { onMount, tick } from 'svelte'
   import { MapPin, Search, Filter } from 'lucide-svelte'
   import { DestinationCard } from '../components/ui'
   import { getEditedDestinos } from '../data/destinos.js'
@@ -13,8 +13,9 @@
     d.country.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
-  onMount(() => {
+  onMount(async () => {
     destinos = getEditedDestinos()
+    await tick()
 
     const observer = new IntersectionObserver(
       (entries) => {
